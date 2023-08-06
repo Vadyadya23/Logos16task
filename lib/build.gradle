@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+}
+
+// Відключаємо стандартний Main класс
+tasks.named('jar') {
+    enabled = false
+}
+
